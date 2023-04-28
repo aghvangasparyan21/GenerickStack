@@ -42,7 +42,11 @@ public class GenericStack<T> {
     }
 
     public boolean isEmpty() {
-        return Stack.isEmpty();
+        if(size == 0) {
+        return true;
+        } else {
+        return false;
+        }
     }
 
     private void reSize(int newSize) {
