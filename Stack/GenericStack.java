@@ -38,7 +38,7 @@ public class GenericStack<T> {
     }
 
     public T peek() {
-        return Stack.get(size);
+        return Stack.get(size - 1);
     }
 
     public boolean isEmpty() {
